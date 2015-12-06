@@ -1,11 +1,4 @@
 import React from "react";
+import Greeting from "./greeting";
 
-let App = React.createClass({
-  render() {
-    return (
-      <div>Hello</div>
-    );
-  }
-});
-
-React.render(<App/>,document.body);
+React.render(<Greeting name="World"/>, document.body);

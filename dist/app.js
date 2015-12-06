@@ -50,20 +50,13 @@
 
 	var _react2 = _interopRequireDefault(_react);
 
+	var _greeting = __webpack_require__(158);
+
+	var _greeting2 = _interopRequireDefault(_greeting);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var App = _react2.default.createClass({
-	  displayName: "App",
-	  render: function render() {
-	    return _react2.default.createElement(
-	      "div",
-	      null,
-	      "Hello"
-	    );
-	  }
-	});
-
-	_react2.default.render(_react2.default.createElement(App, null), document.body);
+	_react2.default.render(_react2.default.createElement(_greeting2.default, { name: "World" }), document.body);
 
 /***/ },
 /* 1 */
@@ -19642,6 +19635,35 @@
 
 	module.exports = deprecated;
 	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	exports.default = _react2.default.createClass({
+	  displayName: "greeting",
+	  render: function render() {
+	    return _react2.default.createElement(
+	      "div",
+	      { className: "greeting" },
+	      "Hello, ",
+	      this.props.name,
+	      "!"
+	    );
+	  }
+	});
 
 /***/ }
 /******/ ]);
